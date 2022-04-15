@@ -1,0 +1,453 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+body>div{
+    display: none;
+    position: fixed;
+    border: 1px solid rgb(245, 246, 247);
+    background-color: rgb(245, 246, 247);
+    width: 23%;
+    height: 100vh;
+    font-size: 10pt;
+    overflow: auto;
+}
+body>div>header{
+    background-color: rgb(239, 241, 242);
+    padding: 10px;
+}
+body>div>main{
+    padding: 10px;
+}
+body>main{
+    position: absolute;
+    /* left: 23%; */
+    
+    display: flex;
+    flex-direction: row;
+}
+main>aside>section>header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 5px solid orange;
+}
+#search{
+    width: 95%;
+    height: 20px;
+}
+#h2_1{
+    border-bottom: 3px solid orange;
+    width: 50px;
+    font-size: 12pt;
+}
+#h2_2{
+    border-bottom: 3px solid orange;
+    width: 100px;
+    font-size: 12pt;
+}
+
+main>div li{
+    padding: 6px 0px;
+    border-bottom: 1px solid rgb(218, 223, 225);
+}
+main a{
+    color: black;
+}
+
+#a, #s{
+    border-bottom: 1px dotted;
+}
+#div_main{
+    border-bottom: 3px solid rgb(218, 223, 225);
+    padding: 10px 0px;
+}
+#ll1{
+    border-bottom: none;
+}
+#div_foot{
+    border-bottom: 2px solid rgb(218, 223, 225);
+    padding: 10px 0px;
+}
+#div_foot p, #ol2 li{
+    padding: 5px 0px;
+}
+#ads{
+    display: flex;
+    flex-direction: row;
+}
+#ads span{
+    display: flex;
+    flex-direction: column;
+}
+#home{
+    color: orange;
+    margin-right: 10px;
+}
+footer{
+    padding-top: 12px;
+}
+#ol2 li:nth-child(1):before{
+    content: " \f0e0";
+    font-family: 'Font Awesome 5 Free';
+    color: orange;
+    margin-right: 10px;
+    font-weight: 900;
+}
+#ol2 li:nth-child(2):before{
+    content: " \f095";
+    font-family: 'Font Awesome 5 Free';
+    color: orange;
+    margin-right: 10px;
+    font-weight: 900;
+}
+/* #ol2 li:nth-child(3):before{
+    content: " \f015";
+    font-family: 'Font Awesome 5 Free';
+    color: orange;
+    margin-right: 10px;
+    font-weight: 900;
+} */
+
+/* icon menu */
+
+main>nav{
+    padding: 11px 0px 0px 10px;
+    color: orange;
+}
+#menu{
+    position: sticky;
+    top: 11px;
+}
+
+/* la page  */
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 20px 10px;
+}
+#header2{
+    padding: 10px 0px;
+}
+#spn_tet{
+    color: rgb(127, 136, 143);
+}
+#pic10{
+    width: 50%;
+    height: 100%;
+    padding: 10px 0px;
+    border-radius: 15px;
+}
+/* #div_img{
+    padding-top: 20px;
+    width: 100%;
+    height: 500px
+} */
+#more{
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: white;
+    color: orange;
+    padding: 6px 8px;
+}
+#nv_pic{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(218, 223, 225);
+    padding-top: 20px;
+}
+#dv_mr{
+    padding: 20px 0px;
+}
+#div_pi{
+    padding: 20px 0px;
+}
+#div_pi h1, #div_pi h5, #div_pi p{
+    padding: 6px 0px;
+}
+#div_pi h5, #div_pi p{
+    color: rgb(127, 136, 143);
+}
+
+#sec_art{
+    padding: 15px 0px;
+    width: 100%;
+}
+#sec_art>h2{
+    border-bottom: 3px solid orange;
+    width: 120px;
+    font-size: 12pt;
+    padding: 10px 0px;
+}
+article h2{
+    font-size: 11pt;
+    padding-top: 10px;
+}
+#dv_art{
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#art1, #art2, #art3, #art4, #art5, #art6{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#art1 p, #art2 p, #art3 p, #art4 p, #art5 p, #art6 p{
+    padding: 15px 0px;
+}
+
+#art1{
+    border-bottom: 2px solid rgb(127, 136, 143);
+    border-right: 2px solid rgb(127, 136, 143);
+    padding: 0px 15px 15px 0px;
+}
+#art1 img{
+    width: 100%;
+    height: 200px;
+}
+
+#art2{
+    border-bottom: 2px solid rgb(127, 136, 143);
+    border-right: 2px solid rgb(127, 136, 143);
+    padding: 0px 15px 15px 15px;
+}
+#art2 img{
+    width: 100%;
+    height: 200px;
+}
+
+#art3{
+    border-bottom: 2px solid rgb(127, 136, 143);
+    padding: 0px 15px 15px 15px;
+}
+#art3 img{
+    width: 100%;
+    height: 200px;
+}
+
+#art4{
+    border-right: 2px solid rgb(127, 136, 143);
+    padding: 15px 15px 15px 0px;
+}
+#art4 img{
+    width: 100%;
+    height: 200px;
+}
+
+#art5{
+    border-right: 2px solid rgb(127, 136, 143);
+    padding: 15px 15px 15px 15px;
+}
+#art5 img{
+    width: 100%;
+    height: 200px;
+}
+
+#art6{
+    padding: 15px 15px 15px 15px;
+}
+#art6 img{
+    width: 100%;
+    height: 200px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #nv_pic {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 2px solid rgb(218, 223, 225);
+        padding-top: 20px;
+    }
+    #pic10{
+        width: 100%;
+        height: 350px;
+        padding: 10px 0px;
+        border-radius: 15px;
+    }
+    #art1, #art2, #art3, #art4, #art5, #art6{
+        width: 50%;
+    }
+    
+    #art1{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: 2px solid rgb(127, 136, 143);
+        padding: 0px 10px 10px 0px;
+    }
+    #art1 img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    #art2{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding: 0px 0px 10px 10px;
+    }
+    #art2 img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    #art3{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: 2px solid rgb(127, 136, 143);
+        padding: 10px 10px 10px 0px;
+    }
+    #art3 img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    #art4{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding: 10px 0px 10px 10px;
+    }
+    #art4 img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    #art5{
+        border-right: 2px solid rgb(127, 136, 143);
+        padding: 10px 10px 10px 0px;
+    }
+    #art5 img{
+        width: 100%;
+        height: 250px;
+    }
+    
+    #art6{
+        padding: 10px 0px 10px 10px;
+    }
+    #art6 img{
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #pic10{
+        width: 100%;
+        height: 250;
+        padding: 10px 0px;
+        border-radius: 15px;
+    }
+    #art1, #art2, #art3, #art4, #art5, #art6{
+        width: 100%;
+    }
+    
+    #art1{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding-bottom: 10px;
+    }
+    #art1 img{
+        width: 100%;
+        height: 170px;
+    }
+    
+    #art2{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding: 10px 0px;
+    }
+    #art2 img{
+        width: 100%;
+        height: 170px;
+    }
+    
+    #art3{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding: 10px 0px;
+    }
+    #art3 img{
+        width: 100%;
+        height: 170px;
+    }
+    
+    #art4{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding: 10px 0px;
+    }
+    #art4 img{
+        width: 100%;
+        height: 170px;
+    }
+    
+    #art5{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        border-right: none;
+        padding: 10px 0px;
+    }
+    #art5 img{
+        width: 100%;
+        height: 170px;
+    }
+    
+    #art6{
+        border-bottom: 2px solid rgb(127, 136, 143);
+        padding: 10px 0px;
+    }
+    #art6 img{
+        width: 100%;
+        height: 170px;
+    }
+}
+@media screen and (max-width: 530px) {
+    body>div{
+        position: fixed;
+        border: 1px solid rgb(245, 246, 247);
+        background-color: rgb(245, 246, 247);
+        width: 112px;
+        height: 100%;
+        font-size: 8pt;
+    }
+    #h2_1{
+        border-bottom: 3px solid orange;
+        width: 50px;
+        font-size: 12pt;
+    }
+    #h2_2{
+        border-bottom: 3px solid orange;
+        width: 100px;
+        font-size: 12pt;
+    }
+    body>main{
+        position: absolute;
+        left: 112px;
+        display: flex;
+        flex-direction: row;
+    }
+    main>nav{
+        padding: 11px 0px 0px 5px;
+        color: orange;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 20px 5px;
+    }
+}
